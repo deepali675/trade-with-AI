@@ -1,108 +1,145 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Trade With AI — Free Webinar</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background: #0b1e39;
-            color: #ffffff;
-        }
-        header {
-            padding: 20px;
-            text-align: center;
-            background: #0d2448;
-        }
-        .section {
-            padding: 50px 20px;
-            text-align: center;
-            max-width: 900px;
-            margin: auto;
-        }
-        h1, h2, h3 {
-            font-weight: 700;
-        }
-        .cta-btn {
-            background: #ff4d4d;
-            color: #fff;
-            padding: 15px 30px;
-            border-radius: 8px;
-            font-size: 18px;
-            display: inline-block;
-            margin-top: 20px;
-            text-decoration: none;
-        }
-        .features {
-            text-align: left;
-            display: inline-block;
-            margin-top: 20px;
-        }
-        .testimonial {
-            background: #10294d;
-            padding: 20px;
-            border-radius: 8px;
-            margin: 15px auto;
-            max-width: 600px;
-        }
-        footer {
-            background: #0d2448;
-            padding: 20px;
-            text-align: center;
-            margin-top: 40px;
-        }
-        /* simple responsive tweaks */
-        @media (max-width:600px){
-            .features{ text-align:left; display:block; margin:auto; }
-            .section{ padding:30px 16px; }
-        }
-    </style>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Trade With AI — Free Webinar</title>
+  <meta name="description" content="Free webinar: learn trading with AI guidance. Beginner-friendly, educational." />
+  <style>
+    :root{--bg:#0b1e39;--card:#0d2448;--accent:#ff4d4d;--muted:#aebed9}
+    body{font-family:Inter,Arial,Helvetica,sans-serif;margin:0;background:var(--bg);color:#fff;line-height:1.5}
+    .container{max-width:980px;margin:0 auto;padding:24px}
+    header{background:var(--card);padding:18px 24px;border-bottom:1px solid rgba(255,255,255,0.03)}
+    header h1{margin:0;font-size:20px}
+    nav{display:flex;gap:12px;align-items:center;margin-top:8px}
+    nav a{color:var(--muted);text-decoration:none;font-size:14px}
+    .hero{padding:36px 0;text-align:center}
+    .hero h2{font-size:32px;margin:8px 0}
+    .sub{color:var(--muted);max-width:760px;margin:0 auto}
+    .cta-row{margin-top:20px;display:flex;gap:12px;justify-content:center;flex-wrap:wrap}
+    .btn{background:var(--accent);color:#fff;padding:12px 20px;border-radius:10px;text-decoration:none;font-weight:600}
+    .btn.secondary{background:transparent;border:1px solid rgba(255,255,255,0.08);color:var(--muted)}
+    section.card{background:rgba(255,255,255,0.03);padding:28px;margin:18px 0;border-radius:12px}
+    .features{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:14px;text-align:left}
+    .features p{margin:6px 0}
+    .testimonials{display:grid;grid-template-columns:1fr;gap:12px}
+    .testimonial{background:rgba(255,255,255,0.02);padding:14px;border-radius:8px;color:var(--muted)}
+    footer{padding:20px;text-align:center;color:var(--muted);font-size:13px}
+    /* video styling */
+    .video-wrap{display:flex;justify-content:center;margin-top:16px}
+    video{max-width:100%;border-radius:10px}
+    /* floating WhatsApp */
+    .whatsapp-float{position:fixed;right:18px;bottom:18px;background:#25D366;border-radius:50%;width:56px;height:56px;display:flex;align-items:center;justify-content:center;box-shadow:0 6px 18px rgba(2,6,23,0.4);z-index:999}
+    .whatsapp-float img{width:28px;height:28px}
+    /* countdown */
+    .countdown{display:inline-block;background:rgba(255,255,255,0.03);padding:8px 12px;border-radius:8px;margin-top:10px}
+    @media (max-width:640px){.hero h2{font-size:22px;padding:0 6px}.container{padding:14px}}
+  </style>
 </head>
 <body>
-    <header>
-        <h2>Trade With AI</h2>
-    </header>
+  <header>
+    <div class="container">
+      <h1>Trade With AI</h1>
+      <nav>
+        <a href="#home">Home</a>
+        <a href="#vision">About</a>
+        <a href="#register">Register</a>
+      </nav>
+    </div>
+  </header>
 
-    <section class="section">
-        <h1>Learn Smarter. Trade Smarter.</h1>
-        <p>An AI-assisted learning platform designed to help you understand market behavior with real-time insights and guided analysis tools.</p>
-        <a class="cta-btn" href="#register">Free Webinar — Register Now</a>
+  <main class="container" id="home">
+    <section class="hero">
+      <h2>Learn Smarter. Trade Smarter.</h2>
+      <p class="sub">AI-assisted learning and guided market insights to help you understand price action and chart patterns—designed for beginners and intermediate traders.</p>
+
+      <div class="cta-row">
+        <!-- JotForm Register button -->
+        <a class="btn" href="https://form.jotform.com/253062170802447" target="_blank" rel="noopener">Register Free Webinar</a>
+        <!-- WhatsApp Link button (optional in-hero) -->
+        <a class="btn secondary" href="https://api.whatsapp.com/send/?phone=%2B917276082328&text=Hi,+I+want+to+join+the+AI+Trading+Webinar&type=phone_number&app_absent=0" target="_blank" rel="noopener">Chat on WhatsApp</a>
+      </div>
+
+      <div class="countdown" id="countdown">Webinar: 23 Nov • 7:30 PM</div>
     </section>
 
-    <section class="section" id="vision">
-        <h2>Stop Guessing. Start Learning with AI.</h2>
-        <p>Many traders struggle because of emotional decisions and delayed information. Our AI tools help bring structure and clarity through real-time pattern analysis.</p>
+    <section id="vision" class="card">
+      <h3>The Vision</h3>
+      <!-- Meta-safe rewritten content -->
+      <p>Most traders face challenges due to emotional decisions and delayed information. Our AI tools are built to provide clear, data-driven observations and guided analysis so you can learn market structure faster.</p>
+      <p><em>“It feels like having an AI assistant that supports you around the clock with data-driven observations.”</em></p>
+
+      <!-- video embedded (place your uploaded fibovideo.mp4 in the repo root) -->
+      <div class="video-wrap">
+        <video controls playsinline>
+          <source src="fibovideo.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+      </div>
     </section>
 
-    <section class="section" id="features">
-        <h2>What You’ll Learn</h2>
-        <div class="features">
-            <p>✔ How AI scans markets in real time</p>
-            <p>✔ Understanding chart patterns with AI guidance</p>
-            <p>✔ How to use AI insights for smarter decision-making</p>
-            <p>✔ Beginner-friendly trading concepts</p>
+    <section class="card">
+      <h3>What You’ll Learn</h3>
+      <div class="features">
+        <div>
+          <p>✔ How AI scans markets in real time</p>
+          <p>✔ Understanding chart patterns with guided explanations</p>
         </div>
+        <div>
+          <p>✔ How to use AI insights to improve your analysis</p>
+          <p>✔ Beginner-friendly trading concepts</p>
+        </div>
+      </div>
     </section>
 
-    <section class="section" id="testimonials">
-        <h2>User Experiences</h2>
+    <section class="card">
+      <h3>User Experiences</h3>
+      <div class="testimonials">
         <div class="testimonial">“AI insights helped me bring more structure into my trading approach.” — Vikrant</div>
         <div class="testimonial">“I understand charts much faster now. AI makes analysis easier.” — Siddiqui</div>
         <div class="testimonial">“The precision of AI pattern detection is impressive.” — Nidhi</div>
+      </div>
     </section>
 
-    <section class="section" id="register">
-        <h2>Join the Free Webinar</h2>
-        <p>Date: <strong>23 November</strong> | Time: <strong>7:30 PM</strong></p>
-        <p>Beginner-friendly • No payment required</p>
-        <a class="cta-btn" href="https://tradewith-ai.github.io/tradewithAi/">Register Now</a>
+    <section id="register" class="card">
+      <h3>Join the Free Webinar</h3>
+      <p><strong>Date:</strong> 23 November &nbsp; | &nbsp; <strong>Time:</strong> 7:30 PM</p>
+      <p>Beginner-friendly • No payment required • Educational</p>
+
+      <div class="cta-row">
+        <a class="btn" href="https://form.jotform.com/253062170802447" target="_blank" rel="noopener">Register Now (JotForm)</a>
+        <a class="btn secondary" href="https://api.whatsapp.com/send/?phone=%2B917276082328&text=Hi,+I+want+to+join+the+AI+Trading+Webinar&type=phone_number&app_absent=0" target="_blank" rel="noopener">Chat on WhatsApp</a>
+      </div>
     </section>
 
-    <footer>
-        © 2025 Trade With AI — Educational Use Only
-    </footer>
+  </main>
+
+  <!-- floating WhatsApp button -->
+  <a class="whatsapp-float" href="https://api.whatsapp.com/send/?phone=%2B917276082328&text=Hi,+I+want+to+join+the+AI+Trading+Webinar&type=phone_number&app_absent=0" target="_blank" rel="noopener" aria-label="Chat on WhatsApp">
+    <img src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%23fff'><path d='M20.52 3.48A11.87 11.87 0 0012 .5 11.85 11.85 0 003.48 8.99c0 2.09.55 4.11 1.6 5.92L2 22l7.35-2.03A11.85 11.85 0 0012 22.5c6.57 0 11.92-5.35 11.92-11.92 0-3.2-1.25-6.2-3.4-8.1z'/></svg>" alt="WhatsApp">
+  </a>
+
+  <footer>
+    <div class="container">© 2025 Trade With AI — Educational Use Only • <a href="#" style="color:var(--muted);text-decoration:none">About</a> • <a href="#" style="color:var(--muted);text-decoration:none">Instagram</a></div>
+  </footer>
+
+  <script>
+    // simple countdown to webinar date (server timezone independent)
+    (function(){
+      var target = new Date('2025-11-23T19:30:00'); // update if needed
+      var el = document.getElementById('countdown');
+      if(!el) return;
+      function update(){
+        var now = new Date();
+        var diff = target - now;
+        if(diff <= 0){ el.textContent = 'Webinar is live or coming soon — Register now'; return; }
+        var days = Math.floor(diff/86400000);
+        var hrs = Math.floor((diff%86400000)/3600000);
+        var mins = Math.floor((diff%3600000)/60000);
+        el.textContent = 'Starts in: ' + days + 'd ' + hrs + 'h ' + mins + 'm';
+      }
+      update(); setInterval(update,60000);
+    })();
+  </script>
 </body>
 </html>
